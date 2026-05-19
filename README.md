@@ -4,7 +4,7 @@ This project implements a simulation-based robotic manipulation pipeline using a
 
 ## 🎥 Demo
 
-[Watch Full Video](pick_place.mp4)
+[Watch Full Video](https://drive.google.com/file/d/1eSVrJrFK-b22rlDouo-BVpjYtuFyTldD/view?usp=sharing)
 
 ## 🚀 Overview
 
