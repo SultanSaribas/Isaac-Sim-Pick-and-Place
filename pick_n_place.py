@@ -5,11 +5,11 @@ from isaacsim.core.api import World
 from isaacsim.robot.manipulators.examples.franka import Franka
 from isaacsim.core.api.objects import DynamicCuboid
 from isaacsim.robot.manipulators.examples.franka.controllers import PickPlaceController
-
+from robotic_toolbox import RoboticsToolboxPickPlaceController
 import numpy as np
 
 
-class HelloWorld:
+class PickAndPlace:
     def __init__(self):
         self.world = World()
 
@@ -31,7 +31,7 @@ class HelloWorld:
         )
 
     def setup_controller(self):
-        self.controller = PickPlaceController(
+        self.controller = RoboticsToolboxPickPlaceController(
             name="pick_place_controller",
             gripper=self.franka.gripper,
             robot_articulation=self.franka,
@@ -70,7 +70,7 @@ class HelloWorld:
                 break
 
 
-app = HelloWorld()
+app = PickAndPlace()
 app.setup_scene()
 app.run()
 
